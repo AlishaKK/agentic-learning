@@ -31,6 +31,7 @@
    2. **Function tools:** 
    
    This allows you to turn any Python function into a tool that your agent can use. The SDK automatically handles the setup:
+   
 
     * The tool's name defaults to the Python function's name (or you can specify one).
     * The tool's description is taken from the function's docstring (or you can provide one).
