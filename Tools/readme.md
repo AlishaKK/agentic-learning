@@ -28,7 +28,7 @@
     ```
 
   
-   2**Function tools:** 
+   2. **Function tools:** 
    
    This allows you to turn any Python function into a tool that your agent can use. The SDK automatically handles the setup:
 
