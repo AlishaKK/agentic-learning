@@ -1,10 +1,12 @@
 
-### Tools
+###  **Tools**
 
 **Tools** empower your agents to take actions beyond just processing text. They allow agents to interact with the outside world, performing tasks like fetching data from the internet, running code, calling external APIs, and even controlling a computer. The Agent SDK categorizes these capabilities into three main types:
 
 
-1.  **Hosted tools:** These are tools provided by the LLM service (like OpenAI) and run on their infrastructure alongside the AI models. OpenAI offers tools for web search, file retrieval from their vector stores, and computer use.
+1.  **Hosted tools:**
+   
+    These are tools provided by the LLM service (like OpenAI) and run on their infrastructure alongside the AI models. OpenAI offers tools for web search, file retrieval from their vector stores, and computer use.
 
     ```python
     from agents import Agent, FileSearchTool, Runner, WebSearchTool
@@ -25,7 +27,10 @@
         print(result.final_output)
     ```
 
-2.  **Function tools:** This allows you to turn any Python function into a tool that your agent can use. The SDK automatically handles the setup:
+  
+   2**Function tools:** 
+   
+   This allows you to turn any Python function into a tool that your agent can use. The SDK automatically handles the setup:
 
     * The tool's name defaults to the Python function's name (or you can specify one).
     * The tool's description is taken from the function's docstring (or you can provide one).
@@ -110,7 +115,10 @@
 
     The SDK automatically parses function signatures and docstrings to simplify the creation of function tools. You can control docstring parsing with the `use_docstring_info` parameter in `@function_tool`.
 
-3.  **Agents as tools:** This powerful feature allows you to use one agent as a tool for another agent. This enables the creation of sophisticated agent workflows where a central orchestrator agent can call upon specialized agents to perform specific tasks.
+
+  3 **Agents as tools:** 
+  
+  This powerful feature allows you to use one agent as a tool for another agent. This enables the creation of sophisticated agent workflows where a central orchestrator agent can call upon specialized agents to perform specific tasks.
 
     ```python
     from agents import Agent, Runner
